@@ -16,7 +16,7 @@ class SearchInput extends React.Component {
 
     state = { entry: '' }
 
-    onFormSubmit = (event) => { 
+    onFormSubmit = (event) => { //rm
         event.preventDefault(); //Do Not clear the screen on an <enter> press
         console.log("Form submitted with value=" + this.state.entry); 
         console.log("SearchInputPropFn=" + this.props.onSearchSubmitProp);
