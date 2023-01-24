@@ -19,7 +19,7 @@ class SearchInput extends React.Component {
     onFormSubmit = (event) => { //rm
         event.preventDefault(); //Do Not clear the screen on an <enter> press
         console.log("Form submitted with value=" + this.state.entry); 
-        console.log("SearchInputPropFn=" + this.props.onSearchSubmitProp);
+        //console.log("SearchInputPropFn=" + this.props.onSearchSubmitProp);
         this.props.onSearchSubmitProp(this.state.entry); //Call the parent component from a child!! Props in a class-based component. Use this.props in this case.
         console.log("OK")
     }
